@@ -66,7 +66,7 @@ def main():
         else:
             from basicsr.archs.rrdbnet_arch import RRDBNet
             from realesrgan import RealESRGANer
-            model = RRDBNet(num_in_ch=3, num_out_ch=3, num_feat=64, num_block=23, num_grow_ch=32, scale=2)
+            model = RRDBNet(num_in_ch=3, num_out_ch=3, num_feat=64, num_block=23, num_grow_ch=32, scale=4)
             bg_upsampler = RealESRGANer(
                 scale=4,
                 model_path='https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.1/RealESRGAN_x2plus.pth',
